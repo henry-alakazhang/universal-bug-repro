@@ -14,7 +14,9 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
     </ng-container>
 
     <ng-template #linkElement>
-      <ng-content></ng-content>
+      <div>
+        <ng-content></ng-content>
+      </div>
     </ng-template>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush

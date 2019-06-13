@@ -4,15 +4,10 @@ import { Component } from "@angular/core";
   selector: "app-dashboard",
   template: `
     <app-text [style]="'normal'">
+      Click here to
       <app-link [link]="'/dashboard'">
-        Should just be one link
+        reload the dashboard
       </app-link>
-    </app-text>
-
-    <app-text [style]="'normal'">
-      A
-      <app-text [style]="'normal'">B</app-text>
-      A
     </app-text>
   `
 })
