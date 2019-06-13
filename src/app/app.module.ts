@@ -8,6 +8,8 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { DashboardComponent } from "./dashboard/dashboard.component";
 import { InMemoryDataService } from "./in-memory-data.service";
+import { LinkComponent } from "./link/link.component";
+import { TextComponent } from "./text/text.component";
 
 @NgModule({
   imports: [
@@ -19,7 +21,12 @@ import { InMemoryDataService } from "./in-memory-data.service";
       dataEncapsulation: false
     })
   ],
-  declarations: [AppComponent, DashboardComponent],
+  declarations: [
+    AppComponent,
+    DashboardComponent,
+    LinkComponent,
+    TextComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
