@@ -3,10 +3,12 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-root",
   template: `
+    <app-link [link]="'/'">My links are green</app-link>
+
     <app-text [style]="'normal'">
-      Click here to
+      But nested ones:
       <app-link [link]="'/'">
-        reload the dashboard
+        are not?
       </app-link>
     </app-text>
   `

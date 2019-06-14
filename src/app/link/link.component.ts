@@ -13,6 +13,7 @@ import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
       </div>
     </ng-template>
   `,
+  styleUrls: ["./link.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LinkComponent {
