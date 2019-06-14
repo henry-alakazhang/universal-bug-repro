@@ -1,13 +1,9 @@
 import { isPlatformBrowser } from "@angular/common";
-import { HttpClientModule } from "@angular/common/http";
 import { APP_ID, Inject, NgModule, PLATFORM_ID } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
-import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { DashboardComponent } from "./dashboard/dashboard.component";
-import { InMemoryDataService } from "./in-memory-data.service";
 import { LinkComponent } from "./link/link.component";
 import { TextComponent } from "./text/text.component";
 
@@ -15,18 +11,9 @@ import { TextComponent } from "./text/text.component";
   imports: [
     BrowserModule.withServerTransition({ appId: "tour-of-heroes" }),
     FormsModule,
-    AppRoutingModule,
-    HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
-      dataEncapsulation: false
-    })
+    AppRoutingModule
   ],
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    LinkComponent,
-    TextComponent
-  ],
+  declarations: [AppComponent, LinkComponent, TextComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {
