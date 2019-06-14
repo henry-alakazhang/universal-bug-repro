@@ -4,10 +4,10 @@ import { Component } from "@angular/core";
   selector: "app-root",
   template: `
     <div class="Big">
-      In a div: <ng-container *ngIf="false; else template"></ng-container>
+      In a div: <ng-container *ngTemplateOutlet="template"></ng-container>
     </div>
     <p class="Big">
-      In a p: <ng-container *ngIf="false; else template"></ng-container>
+      In a p: <ng-container *ngTemplateOutlet="template"></ng-container>
     </p>
 
     <ng-template #template>
